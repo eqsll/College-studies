@@ -1,0 +1,68 @@
+object fMain: TfMain
+  Left = 285
+  Height = 400
+  Top = 274
+  Width = 965
+  BorderStyle = bsDialog
+  Caption = 'СКЛАД МОТОЦИКЛОВ'
+  ClientHeight = 400
+  ClientWidth = 965
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object ButtonPanel: TPanel
+    Left = 0
+    Height = 30
+    Top = 0
+    Width = 965
+    Align = alTop
+    ClientHeight = 30
+    ClientWidth = 965
+    TabOrder = 0
+    object bAdd: TSpeedButton
+      Left = 2
+      Height = 27
+      Top = 2
+      Width = 150
+      Caption = 'НОВАЯ ЗАПИСЬ'
+      OnClick = bAddClick
+    end
+    object bEdit: TSpeedButton
+      Left = 154
+      Height = 27
+      Top = 2
+      Width = 170
+      Caption = 'ИЗМЕНИТЬ ЗАПИСЬ'
+      OnClick = bEditClick
+    end
+    object bDel: TSpeedButton
+      Left = 328
+      Height = 27
+      Top = 2
+      Width = 150
+      Caption = 'УДАЛИТЬ ЗАПИСЬ'
+      OnClick = bDelClick
+    end
+    object bSort: TSpeedButton
+      Left = 478
+      Height = 27
+      Top = 2
+      Width = 150
+      Caption = 'СОРТИРОВАТЬ'
+      OnClick = bSortClick
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 370
+    Top = 30
+    Width = 965
+    Align = alClient
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = bEditClick
+  end
+end

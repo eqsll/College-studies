@@ -1,0 +1,115 @@
+object fEdit: TfEdit
+  Left = 452
+  Height = 461
+  Top = 272
+  Width = 424
+  BorderStyle = bsDialog
+  Caption = 'Редактор продукта'
+  ClientHeight = 461
+  ClientWidth = 424
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object fNameLabel: TLabel
+    Left = 184
+    Height = 20
+    Top = 8
+    Width = 61
+    Caption = 'МОДЕЛЬ'
+  end
+  object fName: TEdit
+    Left = 80
+    Height = 28
+    Top = 40
+    Width = 266
+    TabOrder = 0
+  end
+  object fPriceLabel: TLabel
+    Left = 160
+    Height = 20
+    Top = 88
+    Width = 111
+    Caption = 'ДАТА ВЫПУСКА'
+  end
+  object bSave: TBitBtn
+    Left = 48
+    Height = 38
+    Top = 400
+    Width = 160
+    Caption = 'Сохранить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object bCancel: TBitBtn
+    Left = 216
+    Height = 38
+    Top = 400
+    Width = 160
+    Cancel = True
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object factoryNameLabel: TLabel
+    Left = 192
+    Height = 20
+    Top = 168
+    Width = 36
+    Caption = 'ЦВЕТ'
+  end
+  object factoryName: TEdit
+    Left = 80
+    Height = 28
+    Top = 200
+    Width = 266
+    TabOrder = 3
+  end
+  object CaloryLabel: TLabel
+    Left = 144
+    Height = 20
+    Top = 248
+    Width = 138
+    Caption = 'ОБЪЕМ ДВИГАТЕЛЯ'
+  end
+  object HowManyLabel: TLabel
+    Left = 112
+    Height = 20
+    Top = 328
+    Width = 202
+    Caption = 'МАКСИМАЛЬНАЯ СКОРОСТЬ'
+  end
+  object fPrice: TEdit
+    Left = 80
+    Height = 28
+    Top = 120
+    Width = 266
+    MaxLength = 10
+    TabOrder = 4
+    Text = '    '
+    OnKeyPress = fPriceKeyPress
+  end
+  object Calory: TEdit
+    Left = 80
+    Height = 28
+    Top = 280
+    Width = 266
+    MaxLength = 5
+    TabOrder = 5
+    Text = '     '
+    OnKeyPress = CaloryKeyPress
+  end
+  object HowMany: TEdit
+    Left = 80
+    Height = 28
+    Top = 360
+    Width = 266
+    MaxLength = 4
+    TabOrder = 6
+    Text = '    '
+    OnKeyPress = HowManyKeyPress
+  end
+end
